@@ -1,0 +1,19 @@
+controller_list:
+  - name: /mhuman/arm_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    joints:
+    - jright_shoulder_rotz
+    - jright_shoulder_roty
+    - jright_shoulder_rotx
+    - jright_forearm_rotz
+    - jright_forearm_roty
+    - jright_wrist_rotz
+    - jright_wrist_rotx
+  
+  - name: /mhuman/gripper_controller
+    action_ns: gripper_cmd
+    type: GripperCommand
+    joints:
+      - jright_grip_rhand
+
